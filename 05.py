@@ -18,19 +18,24 @@ def main():
         # vastus = tk.Label(aken, text=f"Esimene sisestus: {tekst1}, Teine sisestus: {tekst2}, Kolmas sisestus: {tekst3}")
         # vastus.pack()
         
-        
+    frame = tk.Frame(aken)
+    frame.pack(pady=5, padx=5)
+    frame2 = tk.Frame(aken)
+    frame2.pack(pady=5, padx=5)
+    frame3 = tk.Frame(aken)
+    frame3.pack(pady=5, padx=5)
    
-    sisestus1 = label = tk.Label(aken, text="Laenusumma (€):").pack()
+    label1 = label = tk.Label(aken, text="Laenusumma (€):").pack()
     sisestus1 = tk.Entry(aken)
     sisestus1.pack()
     
    
     # Teine sisestusväli
-    sisestus2 = label = tk.Label(aken, text="Aastane intressimäär (%):").pack()
+    label2 = label = tk.Label(aken, text="Aastane intressimäär (%):").pack()
     sisestus2 = tk.Entry(aken)
     sisestus2.pack()
     
-    sisestus3 = label = tk.Label(aken, text="Laenuperiood (aastates): ").pack()
+    label3 = label = tk.Label(aken, text="Laenuperiood (aastates): ").pack()
     sisestus3 = tk.Entry(aken)
     sisestus3.pack()
    
