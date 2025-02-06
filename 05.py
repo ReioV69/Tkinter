@@ -19,25 +19,25 @@ def main():
         # vastus.pack()
         
     frame = tk.Frame(aken)
-    frame.pack(pady=5, padx=5)
+    frame.pack(pady=5, padx=5, fill="x")
     frame2 = tk.Frame(aken)
     frame2.pack(pady=5, padx=5)
     frame3 = tk.Frame(aken)
     frame3.pack(pady=5, padx=5)
    
-    label1 = label = tk.Label(aken, text="Laenusumma (€):").pack()
-    sisestus1 = tk.Entry(aken)
-    sisestus1.pack()
+    label1 = tk.Label(frame,  text="Laenusumma (€):").pack(side="left")
+    sisestus1 = tk.Entry(frame)
+    sisestus1.pack(side="left", fill="x", expand=True)
     
    
     # Teine sisestusväli
-    label2 = label = tk.Label(aken, text="Aastane intressimäär (%):").pack()
-    sisestus2 = tk.Entry(aken)
-    sisestus2.pack()
+    label2  = tk.Label(frame2, text="Aastane intressimäär (%):").pack(side="left")
+    sisestus2 = tk.Entry(frame2)
+    sisestus2.pack(side="left", fill="x")
     
-    label3 = label = tk.Label(aken, text="Laenuperiood (aastates): ").pack()
-    sisestus3 = tk.Entry(aken)
-    sisestus3.pack()
+    label3 = tk.Label(frame3, text="Laenuperiood (aastates): ").pack(side="left")
+    sisestus3 = tk.Entry(frame3)
+    sisestus3.pack(side="left",fill="x")
    
 
    
