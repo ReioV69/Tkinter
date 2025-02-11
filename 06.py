@@ -10,7 +10,7 @@ font = "Arial 10"
 padx = 5
 pady = 5
 
-nupp_00 = tk.Button(aken, text="Pildid", font=font)
+nupp_00 = tk.Button(aken, text="Pildid", font=font, fg="gray")
 nupp_00.grid(row=1, column=0, rowspan=5, columnspan=2, padx=padx, pady=pady, sticky="nsew")
 
 #sildid
