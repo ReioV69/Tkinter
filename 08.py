@@ -6,6 +6,22 @@ import os
 
 filename = "Vali enne fail"
 thumb_directory = 'img/thumb'
+selected_files = []
+
+def open_directory():
+    directory = filedialog.askdirectory()
+    if directory:
+        dir_label.config(text=f"Valitud kaust: {directory}")
+        kausta_sisu = os.listdir(directory)
+        for file in kausta_sisu:
+            # print(file)
+            text_field.insert(tk.END, file + "\n")
+            selected_files.append(os.path.join(directory, file))
+
+print(selected_files)
+
+
+
 
 def open_file():
     global filename
