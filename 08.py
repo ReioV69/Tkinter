@@ -1,3 +1,6 @@
+# Reio Viikmaa 12.02.25
+# Ülesanne 8
+
 import tkinter as tk
 from tkinter import filedialog
 from pathlib import Path
